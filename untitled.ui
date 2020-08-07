@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>418</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>391</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLineEdit" name="num_input">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>64</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>도어넘버</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="depth_combo">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>70</y>
+       <width>121</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>0.8T</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1.0T</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>1.2T</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="fsd_combo">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FSD(하니컴)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FSD(그라스울)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FSD(PF보드)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="design_check">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>디자인도어</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="bun_check">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>분체도어</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="design_fsd">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>방화핀</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="design_glass">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>그라스울</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_7">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>110</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>매립</string>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>0</y>
+       <width>16</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="ResultTB">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>371</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>64</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Size</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="one_radio">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>10</y>
+      <width>108</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>편개</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wideth">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="two_radio">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>108</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>양개</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="height">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>370</y>
+      <width>191</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>계산</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>391</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QCheckBox" name="f_option1">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>도장</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="f_option2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>방화핀</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="f_option3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>70</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>후램 그라스울</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="frame_check">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>후렘</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="bar">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>100바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>110바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>120바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>130바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>140바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>150바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>160바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>170바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>180바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>190바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>200바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>210바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>220바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>230바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>240바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>250바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>260바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>270바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>280바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>290바</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>300바</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QCheckBox" name="f_option4">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>100</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>매립</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="lamma">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>96</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>람마</string>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox</zorder>
+   <zorder>ResultTB</zorder>
+   <zorder>label</zorder>
+   <zorder>one_radio</zorder>
+   <zorder>two_radio</zorder>
+   <zorder>wideth</zorder>
+   <zorder>height</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>groupBox_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>418</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>wideth</tabstop>
+  <tabstop>height</tabstop>
+  <tabstop>num_input</tabstop>
+  <tabstop>bun_check</tabstop>
+  <tabstop>design_fsd</tabstop>
+  <tabstop>design_glass</tabstop>
+  <tabstop>f_option4</tabstop>
+  <tabstop>design_check</tabstop>
+  <tabstop>one_radio</tabstop>
+  <tabstop>fsd_combo</tabstop>
+  <tabstop>two_radio</tabstop>
+  <tabstop>depth_combo</tabstop>
+  <tabstop>lamma</tabstop>
+  <tabstop>f_option1</tabstop>
+  <tabstop>f_option2</tabstop>
+  <tabstop>f_option3</tabstop>
+  <tabstop>frame_check</tabstop>
+  <tabstop>bar</tabstop>
+  <tabstop>checkBox_7</tabstop>
+  <tabstop>ResultTB</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
